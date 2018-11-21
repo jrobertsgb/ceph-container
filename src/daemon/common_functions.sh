@@ -132,7 +132,7 @@ function dev_part {
       exit 1
     fi
     echo "$link"
-  elif [[ "${osd_device}" == "*nvme* "]]; then
+  elif [[ "${osd_device}" == "*nvme*" ]]; then
     echo "${osd_device}p${osd_partition}"
   elif [[ "${osd_device:0-1:1}" == [0-9] ]]; then
     echo "${osd_device}p${osd_partition}"
